@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>武汝岚 - AI工程师简历</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 背景动画 -->
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 头部个人信息 -->
+        <header class="header">
+            <div class="profile-section">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <!-- 证件照插入位置 - 请将你的证件照命名为 photo.jpg 并放在同一文件夹下 -->
+                        <img src="photo.jpg" alt="武汝岚证件照" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="avatar-ring"></div>
+                </div>
+                <div class="personal-info">
+                    <h1 class="name">武汝岚</h1>
+                    <p class="title">AI工程师 | 应届毕业生</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>18168550914</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>江苏泰州</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>南通大学 | 地理信息科学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main class="main-content">
+            <!-- 技能特长 -->
+            <section class="section skills-section">
+                <h2 class="section-title">
+                    <i class="fas fa-code"></i>
+                    核心技能
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>AI/机器学习</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">TensorFlow/PyTorch</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">数据分析</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>全栈开发</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript/TypeScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">React/Next.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js/Express</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>其他技能</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">数据库设计</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="82"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">自媒体运营</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="78"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">项目管理</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 项目经历 -->
+            <section class="section projects-section">
+                <h2 class="section-title">
+                    <i class="fas fa-project-diagram"></i>
+                    项目经历
+                </h2>
+                <div class="projects-timeline">
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-header">
+                            <h3>产品能效等级智能验证系统</h3>
+                            <span class="project-tech">Python</span>
+                        </div>
+                        <p class="project-description">
+                            独立开发智能化数据验证工具，通过爬虫技术自动对比Excel与官方网站数据，实现批量验证产品能效等级。
+                            采用多线程处理、智能算法优化、反爬虫机制等技术，验证准确率达96%+，效率提升100倍以上。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">pandas</span>
+                            <span class="tag">requests</span>
+                            <span class="tag">多线程</span>
+                            <span class="tag">数据挖掘</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-header">
+                            <h3>Novel Reader - 现代化小说阅读器</h3>
+                            <span class="project-tech">Next.js + React</span>
+                        </div>
+                        <p class="project-description">
+                            基于 Next.js 15 和 React 19 构建的全功能小说阅读器，提供行业标准的阅读体验。
+                            实现了书架管理、智能推荐、多主题切换、书签系统等完整功能，代码量达2000+行。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js 15</span>
+                            <span class="tag">React 19</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">响应式设计</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-header">
+                            <h3>PopQuiz - AI驱动实时问答系统</h3>
+                            <span class="project-tech">全栈开发</span>
+                        </div>
+                        <p class="project-description">
+                            创新的AI驱动实时问答系统，支持多模态内容处理，智能生成高质量选择题。
+                            集成讯飞星火AI、Socket.io实时通信、PostgreSQL数据库，支持500+并发用户。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">AI集成</span>
+                            <span class="tag">实时通信</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-header">
+                            <h3>水资源信息服务管理系统</h3>
+                            <span class="project-tech">Spring Boot + React</span>
+                        </div>
+                        <p class="project-description">
+                            现代化水资源监测数据管理系统，实现监测点管理、实时数据监控、地图可视化等功能。
+                            采用前后端分离架构，集成地图展示和数据分析功能，提供完整的企业级解决方案。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Ant Design</span>
+                            <span class="tag">地图可视化</span>
+                            <span class="tag">数据分析</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub链接 -->
+                <div class="github-section">
+                    <div class="github-link-container">
+                        <i class="fab fa-github"></i>
+                        <span>详见GitHub主页：</span>
+                        <a href="https://github.com/alanbulan" target="_blank" class="github-link">
+                            https://github.com/alanbulan
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- 打印样式 -->
+    <div class="print-only">
+        <div class="print-header">
+            <h1>武汝岚 - AI工程师简历</h1>
+            <p>联系方式：18168550914 | 地址：江苏泰州 | 学历：南通大学 地理信息科学</p>
+            <p>GitHub主页：https://github.com/alanbulan</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
